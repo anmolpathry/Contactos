@@ -37,11 +37,11 @@ export class AgregarPage {
   }
 
   ClickAgregar(){
-    if(this.Nombre.length > 0 || this.Telefono.length > 0){
+    if(this.Nombre.length > 0 && this.Telefono.length > 0){
 
      this.Contactos.push({nombre: this.Nombre, telefono: this.Telefono, 
       correo: this.Correo, facebook: this.Facebook, twitter: this.Twitter, 
-      Instagram: this.Instagram, avatar: "../assets/avatar4.jpg" })
+      instagram: this.Instagram, avatar: "../assets/avatar4.jpg" })
     
     }
 

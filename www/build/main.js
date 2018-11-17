@@ -353,28 +353,28 @@ var AgregarPage = /** @class */ (function () {
         console.log('ionViewDidLoad AgregarPage');
     };
     AgregarPage.prototype.ClickAgregar = function () {
-        if (this.Nombre.length > 0 || this.Telefono.length > 0) {
+        if (this.Nombre.length > 0 && this.Telefono.length > 0) {
             this.Contactos.push({ nombre: this.Nombre, telefono: this.Telefono,
                 correo: this.Correo, facebook: this.Facebook, twitter: this.Twitter,
-                Instagram: this.Instagram, avatar: "../assets/avatar4.jpg" });
+                instagram: this.Instagram, avatar: "../assets/avatar4.jpg" });
         }
         else {
-            var alert_1 = this.alertCtrl.create({
+            var alert = this.alertCtrl.create({
                 title: 'Oops',
                 subTitle: 'El contacto debe tener nombre y telefono',
                 buttons: ['OK']
             });
-            alert_1.present();
+            alert.present();
         }
     };
     AgregarPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-agregar',template:/*ion-inline-start:"/Users/geeta/CONTACTOS/Contactos/src/pages/agregar/agregar.html"*/'<!--\n  Generated template for the AgregarPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title style= "background-color: rgb(180, 101, 120) ">\n    <h2 style= "color: aliceblue"> Agregar Contacto</h2> \n    </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding style= "background-color: rgb(180, 101, 120) ">\n  <ion-list>\n      <ion-item [(ngModel)]= "Nombre" style="background-color:rgb(202, 50, 95)">\n          <ion-input placeholder= "Nombre"></ion-input>\n     </ion-item>\n\n     <ion-item [(ngModel)]= "Telefono" style="background-color:rgb(202, 50, 95)"> \n        <ion-input placeholder= "Teléfono"></ion-input>\n   </ion-item>\n\n   <ion-item [(ngModel)]= "Correo" style="background-color:rgb(202, 50, 95)">\n      <ion-input placeholder= "Correo Electrónico"></ion-input>\n </ion-item>\n\n <ion-item  [(ngModel)]= "Facebook" style="background-color:rgb(202, 50, 95)">\n    <ion-input placeholder= "Facebook"></ion-input>\n</ion-item>\n\n<ion-item [(ngModel)]= "Twitter"  style="background-color:rgb(202, 50, 95)"> \n    <ion-input placeholder= "Twitter"></ion-input>\n</ion-item>\n\n<ion-item  [(ngModel)]= "Insta" style="background-color:rgb(202, 50, 95)">\n    <ion-input placeholder= "Instragram"></ion-input>\n</ion-item>\n\n  </ion-list>\n\n  <button (click)= "ClickAgregar()" ion-button block color="#6dc2c7d">Agregar</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/geeta/CONTACTOS/Contactos/src/pages/agregar/agregar.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
     ], AgregarPage);
     return AgregarPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=agregar.js.map
