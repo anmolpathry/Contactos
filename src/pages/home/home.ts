@@ -26,7 +26,7 @@ export class HomePage {
 
   {
     nombre: "Ian Wesley",
-    telefono: "(33)17545895",
+    telefono: "(33) 17545895",
     correo: "wesleyi@gmail.com",
     facebook: "ianwesley",
     twitter: "wesley.rocks",
