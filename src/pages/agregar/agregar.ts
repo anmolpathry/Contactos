@@ -41,7 +41,7 @@ export class AgregarPage {
 
      this.Contactos.push({nombre: this.Nombre, telefono: this.Telefono, 
       correo: this.Correo, facebook: this.Facebook, twitter: this.Twitter, 
-      instagram: this.Instagram, avatar: "../assets/avatar4.jpg" })
+      Instagram: this.Instagram, avatar: "../assets/avatar4.jpg" })
     
     }
 
