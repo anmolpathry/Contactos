@@ -172,10 +172,9 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"/Users/geeta/CONTACTOS/Contactos/src/pages/home/home.html"*/'<ion-header >\n  <ion-toolbar>\n    <ion-buttons end>\n      <button (click)="clickAgregar()" ion-button icon-only color="royal">\n        <ion-icon  name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style= "background-color: rgb(180, 101, 120) " >\n      <h2 style="color: aliceblue"> Contactos </h2>\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content padding style= "background-color: rgb(180, 101, 120) "> \n\n    <ion-list >\n        <ion-item-sliding *ngFor= "let contacto of Contactos">\n          <ion-item style= "background-color: rgb(177, 101, 240) " >\n            <ion-avatar item-start >\n              <img [src]= contacto.avatar>\n            </ion-avatar>\n            <h2 (click)= "ClickMostrar(contacto)">{{contacto.nombre}}</h2>\n            <h3>{{contacto.telefono}}</h3>\n          </ion-item>\n          <ion-item-options side="left">\n          </ion-item-options>\n          <ion-item-options side="right">\n            <button ion-button color="danger">\n              <ion-icon name="close"></ion-icon>\n              Eliminar\n            </button>\n          </ion-item-options>\n        </ion-item-sliding>\n      </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/geeta/CONTACTOS/Contactos/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
     return HomePage;
-    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
